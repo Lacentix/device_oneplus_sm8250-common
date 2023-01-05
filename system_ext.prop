@@ -20,6 +20,9 @@ ro.charger.enable_suspend=1
 # DPM
 persist.vendor.dpm.feature=9
 
+# Display
+ro.sf.use_latest_hwc_vsync_period=0
+
 # GPS
 persist.backup.ntpServer=0.pool.ntp.org
 
