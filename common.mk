@@ -117,6 +117,10 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.oplus.rc
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
