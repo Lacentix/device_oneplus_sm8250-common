@@ -252,10 +252,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
-PRODUCT_PACKAGES += \
-    libavservices_minijail \
-    libavservices_minijail.vendor
-
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
@@ -317,8 +313,7 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service \
-    android.hardware.power@1.2.vendor \
-    vendor.qti.hardware.perf@2.2.vendor
+    android.hardware.power@1.2.vendor
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -328,6 +323,8 @@ PRODUCT_PACKAGES += \
 
 # QTI
 TARGET_BOARD_PLATFORM := kona
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
 
 # RIL
 PRODUCT_PACKAGES += \
