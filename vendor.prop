@@ -189,8 +189,5 @@ ro.telephony.default_network=33,22
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.sync_request=true
 
-# WiFi
-wifi.aware.interface=wifi-aware0
-
 # Zygote
 zygote.critical_window.minute=10
