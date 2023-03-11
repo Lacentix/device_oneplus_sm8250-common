@@ -354,6 +354,10 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true
 
+# WiFi
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.wifi.hostapd@1.1.vendor
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl \
