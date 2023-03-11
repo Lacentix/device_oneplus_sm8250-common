@@ -251,16 +251,12 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
-$(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
-    CarrierConfigResCommon \
     FrameworksResTarget \
+    OPlusCarrierConfigResCommon \
     OPlusFrameworksResCommon \
     OPlusSettingsResCommon \
-    OPlusSystemUIResCommon \
-    WifiResTarget
+    OPlusSystemUIResCommon
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -286,6 +282,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     bt \
     nfc \
+    overlay \
     perf \
     usb \
     vibrator \
