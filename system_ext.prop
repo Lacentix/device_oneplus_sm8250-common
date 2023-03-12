@@ -20,7 +20,6 @@ ro.sf.use_latest_hwc_vsync_period=0
 persist.backup.ntpServer=0.pool.ntp.org
 
 # Media
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.media.recorder-max-base-layer-fps=60
 
