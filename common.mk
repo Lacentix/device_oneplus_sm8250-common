@@ -196,6 +196,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     telephony \
     usb \
     vibrator \
+    wfd \
     wlan
 
 # Sensors
@@ -246,14 +247,6 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libnl \
-    libwfdaac_vendor
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8250-common/sm8250-common-vendor.mk)
