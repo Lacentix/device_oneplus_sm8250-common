@@ -119,10 +119,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.oplus.rc
 
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor
-
 # Neural networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
@@ -149,7 +145,24 @@ PRODUCT_PACKAGES += \
 
 # QTI
 TARGET_BOARD_PLATFORM := kona
-TARGET_COMMON_QTI_COMPONENTS := all
+TARGET_COMMON_QTI_COMPONENTS := \
+    adreno \
+    audio \
+    av \
+    bt \
+    display \
+    gps \
+    init \
+    keymaster \
+    media \
+    nfc \
+    overlay \
+    perf \
+    telephony \
+    usb \
+    vibrator \
+    wfd \
+    wlan
 
 # Sensors
 PRODUCT_PACKAGES += \

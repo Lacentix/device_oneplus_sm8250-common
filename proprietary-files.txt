@@ -559,11 +559,6 @@ odm/lib64/libgf_hal_G6_oplus.so
 odm/lib64/libgf_ud_hal_20801_G3_oplus.so
 odm/lib64/vendor.oplus.hardware.commondcs@1.0.so
 
-# Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-
 # Graphics (Adreno firmware)
 vendor/firmware/a650_gmu.bin
 vendor/firmware/a650_sqe.fw
@@ -930,7 +925,6 @@ vendor/lib64/libnlnetmgr.so
 vendor/lib64/liboemnvbk_img_helper.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
-vendor/lib64/libqcbor.so
 vendor/lib64/libqcrildatactl.so
 vendor/lib64/libqcrilFramework.so
 vendor/lib64/libqrtr.so
