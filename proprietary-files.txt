@@ -367,11 +367,6 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|7dc3f932216
 # Camera firmware - OOS
 vendor/firmware/CAMERA_ICP.elf|9a060a175570cd9c7d4b9d7c0605aa212e937b68
 
-# Charger - OOS
-vendor/bin/init.qti.chg_policy.sh|9a96b05abdfe149eb8a7e20a791284e84b5fffe0
-vendor/etc/charger_fstab.qti|8464c139d93f05e86ff9c9d31b3e8617b8d9476e
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc|1d9997d6fae68905d9202760154b622bceae3700
-
 # Charger firmware - OOS
 odm/firmware/fastchg/19063/oplus_vooc_fw.bin|a4cc63086f1ffd4385e8ff03d37497bc3c4d8119
 odm/firmware/fastchg/19065/oplus_vooc_fw.bin|a4cc63086f1ffd4385e8ff03d37497bc3c4d8119
