@@ -470,7 +470,6 @@ vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 vendor/bin/ssgqmigd
 vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
-vendor/lib64/libminksocket.so
 
 # Data
 vendor/bin/ATFWD-daemon
@@ -507,10 +506,6 @@ vendor/lib64/vendor.qti.hardware.embmssl@1.0.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
-
-# Diag
-vendor/lib/libdiag.so
-vendor/lib64/libdiag.so
 
 # Display (Features) - OOS
 vendor/bin/feature_enabler_client|0e25e593af2f9f3520d28980ad60a67a5cc5385e
@@ -985,29 +980,16 @@ vendor/lib64/libsystem_health_mon.so
 
 # QSEECOM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
-vendor/bin/qseecomd
-vendor/etc/init/qseecomd.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/etc/gpfspath_oem_config.xml
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/librpmb.so
-vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
 # QTEE
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/libGPQTEEC_vendor.so
-vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_listener.so
-vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # RemoteFS
 vendor/bin/rmt_storage
@@ -1055,17 +1037,12 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 # SecureMSM
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
-vendor/lib64/libbase64.so
-vendor/lib64/libcpion.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
-vendor/lib64/libops.so
 vendor/lib64/libpvr.so
 vendor/lib64/librmp.so
-vendor/lib64/libqisl.so
 vendor/lib64/libspl.so
-vendor/lib64/libtzdrmgenprov.so
 
 # Sensors - OOS
 odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service|e16614a03091526446930ea9dfdc19dfc62b17e8
@@ -1183,9 +1160,7 @@ vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|28b4fa4f00eb5b5d4d46fd0
 # SMC Invoke
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
-vendor/lib64/libminkdescriptor.so
 vendor/lib64/libnative-api.so
-vendor/lib64/libqcbor.so
 
 # Soter - OOS
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|8e315a85eeeb94a51f1533c80212d2fc0ec88760
@@ -1208,7 +1183,6 @@ vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
 vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
-vendor/lib64/libtime_genoff.so
 
 # Touchscreen firmware - OOS
 odm/firmware/tp/19065/FW_S6SY791_SAMSUNG.bin|37b367d10fdcb49ef80aea831ffad88dc2c9980c

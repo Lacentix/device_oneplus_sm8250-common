@@ -149,7 +149,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     all \
     charging \
     dsprpcd \
-    keymaster
+    keymaster \
+    qseecomd
 
 # Sensors
 PRODUCT_PACKAGES += \
