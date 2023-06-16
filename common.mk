@@ -148,6 +148,7 @@ TARGET_BOARD_PLATFORM := kona
 
 TARGET_COMMON_QTI_COMPONENTS := \
     all \
+    alarm \
     charging \
     dsprpcd \
     keymaster \
