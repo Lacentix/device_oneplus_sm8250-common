@@ -150,12 +150,27 @@ PRODUCT_PACKAGES += \
 TARGET_BOARD_PLATFORM := kona
 
 TARGET_COMMON_QTI_COMPONENTS := \
-    all \
+    adreno \
     alarm \
+    audio \
+    av \
+    bt \
     charging \
+    display \
     dsprpcd \
+    gps \
+    init \
     keymaster \
-    qseecomd
+    media \
+    nfc \
+    overlay \
+    perf \
+    qseecomd \
+    telephony \
+    usb \
+    vibrator \
+    wfd \
+    wlan
 
 # Sensors
 PRODUCT_PACKAGES += \
