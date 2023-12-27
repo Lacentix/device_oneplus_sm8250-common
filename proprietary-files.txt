@@ -578,6 +578,7 @@ vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service|1337df7e87fba98d3eeb9a2719cc429941d7b727|d143a3f4df8950bdac8d4ceb9e10a93411f9f3d3
 odm/bin/init.oplus.fingerprints.sh|950befd6f64d4055bf47ab066a0a1e0080e6191e
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc|e94a5afae3e0b43d9059500bb749b6c735e82415
+-odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml|2b2a34152222f99ebbd7dbfd4c5150b57765b9cc|78ca4f56ed1f5dd48c186718718fd9513629851e
 odm/lib64/hw/fingerprint.19805_goodix9638_G6_3.default.so|7169acb6296e2d7794cc36ff1ad9fd4b2a58b9e5
 odm/lib64/hw/fingerprint.19805_goodix9678_G6_7.default.so|0cc3f891c480ee9e99687d420f34238563cc731d
 odm/lib64/hw/fingerprint.19811_goodix9638_G6.default.so|b62ea377959c02f15adc5e360f5416c99f48cfb2
@@ -596,7 +597,6 @@ odm/lib64/libosensehalclient.so|f6e8c571abecc4f90e6cfb437952e1ce404705cb
 odm/lib64/vendor.oplus.hardware.commondcs@1.0.so|64eeee3fc357cdbfb42a41e169983992e55d93da
 odm/lib64/vendor.oplus.hardware.orms@1.0.so|faff993f8153eaf55223f49e5e2ad378f4e96013
 odm/lib64/vendor.oplus.hardware.osense.client@1.0.so|7afe5ad5a5e1159a47415c0755e6c950752ed8ce
--odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml|2b2a34152222f99ebbd7dbfd4c5150b57765b9cc|78ca4f56ed1f5dd48c186718718fd9513629851e
 
 # Graphics (Adreno firmware) - OOS
 vendor/firmware/a650_gmu.bin|c744acb10afb7c980d333c5b6521e2a18993ff14
@@ -697,8 +697,8 @@ vendor/etc/public.libraries.txt|c3be9d7161d1d06083b8c068d5aca39030837488
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
 vendor/lib64/libhexagon_nn_stub.so
 vendor/lib64/unnhal-acc-adreno.so
@@ -849,8 +849,8 @@ vendor/lib64/libsystem_health_mon.so
 
 # QSEECOM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
-vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/etc/gpfspath_oem_config.xml
+vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
@@ -887,17 +887,17 @@ vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
 vendor/bin/hw/vendor.qti.secure_element@1.2-service
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
 vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
-vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
 vendor/lib64/android.hardware.secure_element@1.0-impl.so
+vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
 # SecureMSM
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
-vendor/lib64/libhdcpsrm.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
+vendor/lib64/libhdcpsrm.so
 vendor/lib64/libpvr.so
 vendor/lib64/librmp.so
 vendor/lib64/libspl.so
@@ -906,6 +906,7 @@ vendor/lib64/libspl.so
 odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service|e16614a03091526446930ea9dfdc19dfc62b17e8
 odm/bin/oplus_sensor_fb|c1b6d7a191fab1abed65cd649cc1c21033c55b49
 odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc|0a7d6f9b049c53f2d181b4c764d30b095f37cf0b
+-odm/etc/vintf/manifest/manifest_oplusSensor.xml|2792c1ecabc3188f97e5611a71c4336fce30e4a6
 odm/lib64/liboplus_service.so|feb8934ea602cea167196ce75a7c4fc97c0eb98c
 odm/lib64/vendor.oplus.hardware.oplusSensor@1.0.so|daf5a868f2c2680ad74790023cf94f80a158517a
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service|79e6f3a28671bdc8b13b329a829fb64d7b0deb79
@@ -1013,7 +1014,6 @@ vendor/lib64/libssc.so|92c5323689885f4f3c2e40741ffaec3da3c716ee
 vendor/lib64/libssc_default_listener.so|1653233f7454f3be9e8361ab5fde7cd45e9ac9b4
 vendor/lib64/sensors.ssc.so|c52baa36b0257f05660225d5597b75892fdd1c7b|bb086be8bca993edab9309c3e081cf9494200c4b
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|28b4fa4f00eb5b5d4d46fd09e8a2b31bcfff9a76
--odm/etc/vintf/manifest/manifest_oplusSensor.xml|2792c1ecabc3188f97e5611a71c4336fce30e4a6
 
 # SMC Invoke
 vendor/etc/ssg/ta_config.json
@@ -2080,11 +2080,11 @@ vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 # Widevine DRM - OOS
 odm/bin/hw/android.hardware.drm@1.3-service.widevine|6c18708482d4e09553bd6cf3bcfaf10e9c4bb4a4
 odm/etc/init/android.hardware.drm@1.3-service.widevine.rc|7801ccf2718b30ffac54c4beb88370726a4a86c6
+-odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
 odm/lib64/liboemcrypto.so|5876fe1812e630de5417d3f028b43c02139c32ad
 odm/lib64/libwvhidl.so|47d7bd45bee04d43e3679a552558abc848e5594c
 odm/lib64/mediadrm/libwvdrmengine.so|0f3d969c316841306b4e97bc9ae5d449b11d803c
 vendor/lib64/libtrustedapploader.so|030366cf9b29f9beacea371f1c2a8781664be851
--odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
 
 # WiFi
 vendor/bin/cnss-daemon
